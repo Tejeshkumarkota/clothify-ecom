@@ -25,7 +25,7 @@ const Banner = () => {
             </h1>
             <p
               data-aos="fade-up"
-              className="text-sm text-gray-500 tracking-wide leading-5"
+              className="text-sm text-gray-500 dark:text-gray-400 tracking-wide leading-5"
             >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
               reiciendis inventore iste ratione ex alias quis magni at optio

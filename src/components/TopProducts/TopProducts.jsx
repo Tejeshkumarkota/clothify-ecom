@@ -70,7 +70,7 @@ const TopProducts = ({ handleOrderPopup }) => {
                   <FaStar className="text-yellow-500" />
                 </div>
                 <h1 className="text-xl font-bold">{data.title}</h1>
-                <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                <p className="text-gray-500 group-hover:text-white dark:text-gray-400 duration-300 text-sm line-clamp-2">
                   {data.description}
                 </p>
                 <button
