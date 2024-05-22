@@ -22,12 +22,12 @@ const Menu = [
     link: "/#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#",
   },
@@ -96,13 +96,13 @@ const Navbar = ({ handleOrderPopup }) => {
       {/* lower Navbar */}
       <div data-aos="zoom-in" className="flex justify-center">
         <ul className="sm:flex hidden items-center gap-4">
-          {Menu.map((data) => (
-            <li key={data.id}>
+          {Menu.map((menumap) => (
+            <li key={menumap.id}>
               <a
-                href={data.link}
+                href={menumap.link}
                 className="inline-block px-4 hover:text-primary duration-200"
               >
-                {data.name}
+                {menumap.name}
               </a>
             </li>
           ))}
@@ -116,13 +116,13 @@ const Navbar = ({ handleOrderPopup }) => {
             </a>
             <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">
               <ul>
-                {DropdownLinks.map((data) => (
-                  <li key={data.id}>
+                {DropdownLinks.map((trend) => (
+                  <li key={trend.id}>
                     <a
-                      href={data.link}
+                      href={trend.link}
                       className="inline-block w-full rounded-md p-2 hover:bg-primary/20 "
                     >
-                      {data.name}
+                      {trend.name}
                     </a>
                   </li>
                 ))}
